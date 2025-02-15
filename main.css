@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "poppins";
+}
+
+:root {
+    --main-bg-color: #6c63ff;
+    --main-text-color: #6c63ff;
+    --second-text-color:#c7c2fd;
+    --second-bg-color: #c7c2fd;
+}
+
+.primary-text {
+    color: var(--main-text-color);
+}
+
+.text-secondary {
+    color: var(--second-text-color);
+}
+
+.primary-bg {
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+    color: var(--second-bg-color);
+    
+}.rounded-full {
+    border-radius: 100%;
+}
+
+.navbar{
+    background-image: url(assets/img/NAV_BG_COLOR.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.sidebarw{
+    background-image: linear-gradient(
+        to right,
+        #ffffff,
+        #eaeaf4,
+        #e9e8f3,
+        #eaeaf4
+      
+
+    );
+}
+#wrapper {
+    overflow-x: hidden;
+
+  
+}
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+ 
+}
+#sidebar-wrapper .sidebar-heading {
+   padding: 0.875rem 1.25rem;
+   font-size: 1.25rem; 
+}
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+#page-content-wrapper{
+    min-width: 100vw;
+}
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+#menu-toggle{
+    cursor: pointer;
+}
+.list-group-item{
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active{
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border:none;
+}
+
+@media (min-width:768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+i{
+    font-size: 25px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #6c63ff, #c7c2fd);
+    
+}
+i.fa-power-off{
+    font-size: 25px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, red, orange);
+    
+}
+i.fa-user{
+    font-size: 25px;
+    color:  #6c63ff;
+    
+    
+}
+
+a .active{
+    color: #6c63ff;
+}
